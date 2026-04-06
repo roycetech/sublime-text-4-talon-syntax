@@ -8,6 +8,12 @@ CURRENT_BUILD=$(shell ./set_build_number.sh)
 check:
 	@echo "Build Number: $(CURRENT_BUILD)"
 
+
+build:
+	jq '.version = "$(CURRENT_BUILD)"' \
+		package-metadata.json > temp.json \
+		&& mv temp.json package-metadata.json
+
 tag:
 	@if git rev-parse -q --verify "refs/tags/$(CURRENT_BUILD)" >/dev/null 2>&1; then \
 		echo "Tag $(CURRENT_BUILD) already exists locally; skipping."; \

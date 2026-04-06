@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: Talon
+name: Talon Syntax
 file_extensions:
   - talon
 scope: source.talon
