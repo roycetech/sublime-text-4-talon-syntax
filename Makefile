@@ -9,11 +9,6 @@ check:
 	@echo "Build Number: $(CURRENT_BUILD)"
 
 
-build: check
-	@jq '.version = "$(CURRENT_BUILD)"' \
-		package-metadata.json > temp.json \
-		&& mv temp.json package-metadata.json
-
 tag:
 	# Perform a release of a new version.
 	@if git rev-parse -q --verify "refs/tags/$(CURRENT_BUILD)" >/dev/null 2>&1; then \
