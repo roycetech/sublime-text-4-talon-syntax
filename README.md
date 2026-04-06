@@ -21,7 +21,7 @@ This [Sublime Text](http://www.sublimetext.com/) package adds syntax highlightin
 ### Using Git
 
 1. Change to your Sublime Text `Packages` directory
-2. Clone repository `git clone https://github.com/roycetech/sublime-text-4-talon-syntax.git 'AppleScript Extensions'`
+2. Clone repository `git clone https://github.com/roycetech/sublime-text-4-talon-syntax.git`
 
 ### Manual installation
 
