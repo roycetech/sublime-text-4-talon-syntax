@@ -1,4 +1,4 @@
-# Talon syntax for Sublime Text
+# Talon for Sublime Text
 
 [![License](https://img.shields.io/github/license/roycetech/sublime-text-4-talon-syntax?style=for-the-badge)](LICENSE)
 [![Version](https://img.shields.io/github/v/release/roycetech/sublime-text-4-talon-syntax?style=for-the-badge)](https://github.com/roycetech/sublime-text-4-talon-syntax/releases)
@@ -6,7 +6,7 @@
 
 This [Sublime Text](http://www.sublimetext.com/) package adds syntax highlighting and comment functionality for [Talon Voice](https://talonvoice.com).
 
-![Screencapture](https://raw.github.com/roycetech/sublime-text-4-talon-syntax/master/screenshot.gif)
+![Screencapture](https://raw.github.com/roycetech/sublime-text-4-talon-syntax/master/screencapture.gif)
 
 *Screencapture of Talon in Sublime Text*
 
