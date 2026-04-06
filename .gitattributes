@@ -1,0 +1,13 @@
+# Archives / exports
+.gitattributes   export-ignore
+.gitignore       export-ignore
+
+# CI / tooling
+Makefile         export-ignore
+*.sh             export-ignore
+
+# Docs (keep README if you want, exclude the rest)
+CHANGELOGS.md     export-ignore
+
+# Images / assets (screenshots, icons used only for the repo page)
+*.gif            export-ignore
