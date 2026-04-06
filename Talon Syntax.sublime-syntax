@@ -1,0 +1,58 @@
+%YAML 1.2
+---
+name: Talon
+file_extensions:
+  - talon
+scope: source.talon
+
+contexts:
+  main:
+    - include: comment
+    - include: context_header
+    - include: action_body
+
+  comment:
+    - match: '#.*$'
+      scope: comment.line.number-sign.talon
+
+  context_header:
+    # The --- separator line
+    - match: '^-{3,}\s*$'
+      scope: keyword.operator.talon
+    # Tags: app: os() etc. before the ---
+    - match: '^(\w[\w.]*)\s*(:)\s*(.*)'
+      captures:
+        1: entity.name.tag.talon
+        2: punctuation.separator.talon
+        3: string.unquoted.talon
+
+  action_body:
+    # Voice command rule (left side before the colon)
+    - match: '^(\s*)([^:\n]+?)(\s*)(:)\s*$'
+      captures:
+        2: entity.name.function.talon
+        4: punctuation.separator.talon
+    # Action calls / key() / sleep() etc. (indented lines)
+    - match: '^\s+(\w[\w.]*)\s*(\()'
+      captures:
+        1: support.function.talon
+        2: punctuation.section.parens.begin.talon
+    # Strings
+    - include: string
+    # Numbers
+    - match: '\b[0-9]+(\.[0-9]+)?\b'
+      scope: constant.numeric.talon
+    # key(), sleep() argument content
+    - match: '\)'
+      scope: punctuation.section.parens.end.talon
+
+  string:
+    - match: '"'
+      scope: punctuation.definition.string.begin.talon
+      push:
+        - meta_scope: string.quoted.double.talon
+        - match: '"'
+          scope: punctuation.definition.string.end.talon
+          pop: true
+        - match: '\\.'
+          scope: constant.character.escape.talon
