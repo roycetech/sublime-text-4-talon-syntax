@@ -1,4 +1,4 @@
-# Talon Syntax for Sublime Text
+# Talon syntax for Sublime Text
 
 [![License](https://img.shields.io/github/license/roycetech/sublime-text-4-talon-syntax?style=for-the-badge)](LICENSE)
 [![Version](https://img.shields.io/github/v/release/roycetech/sublime-text-4-talon-syntax?style=for-the-badge)](https://github.com/roycetech/sublime-text-4-talon-syntax/releases)

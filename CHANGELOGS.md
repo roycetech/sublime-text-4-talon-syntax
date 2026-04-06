@@ -3,6 +3,8 @@
 The top most version will be picked up by the script to determine the current
 version. The script looks for the pattern: `^vN.*`
 
+* v0.2.3 - Mon, Apr 06, 2026, at 02:05:48 PM
+  * doc: Fix package name.
 * v0.2.2 - Mon, Apr 06, 2026, at 01:43:22 PM
   * doc: Fix typo.
 * v0.2.1 - Mon, Apr 06, 2026, at 01:38:13 PM
