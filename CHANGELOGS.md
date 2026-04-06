@@ -3,6 +3,8 @@
 The top most version will be picked up by the script to determine the current
 version. The script looks for the pattern: `^vN.*`
 
+* v0.2.2 - Mon, Apr 06, 2026, at 01:43:22 PM
+  * doc: Fix typo.
 * v0.2.1 - Mon, Apr 06, 2026, at 01:38:13 PM
   * doc: Corrected README links.
 * v0.2.0 - Mon, Apr 06, 2026, at 01:22:20 PM
@@ -14,4 +16,4 @@ version. The script looks for the pattern: `^vN.*`
 * v0.0.2 - Mon, Apr 06, 2026, at 11:01:40 AM
   * feat: Improved tagging.
 * v0.0.1 - Mon, Apr 06, 2026, at 11:01:40 AM
-  *feat: Initial release.
+  * feat: Initial release.

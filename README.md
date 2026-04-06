@@ -16,7 +16,7 @@ This [Sublime Text](http://www.sublimetext.com/) package adds syntax highlightin
 
 1. Make sure you already have [Package Control](https://packagecontrol.io/) installed
 2. Choose “*Install Package*” from the Command Palette (Super+Shift+p)
-3. Select “*Talon*”” and press Enter
+3. Select “*Talon*” and press Enter
 
 ### Using Git
 
